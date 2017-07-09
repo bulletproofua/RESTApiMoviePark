@@ -1,0 +1,21 @@
+{
+  "name": "RESTApiMoviePark",
+  "description": "RESTApiMoviePark",
+  "main": "server/server.js",
+  "authors": [
+    "bulletproofua <yuriy.haydeychuk@gmail.com>"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/bulletproofua/RESTApiMoviePark",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "backbone": "^1.3.3",
+    "underscore": "^1.8.3"
+  }
+}
