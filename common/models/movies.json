@@ -1,0 +1,48 @@
+{
+  "name": "Movies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "MovieId": {
+      "type": "number",
+      "required": true
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Length": {
+      "type": "number"
+    },
+    "Slogan": {
+      "type": "string"
+    },
+    "PremiereDate": {
+      "type": "date"
+    },
+    "RatingAgeLimit": {
+      "type": "string"
+    },
+    "Budget": {
+      "type": "number"
+    },
+    "Rating": {
+      "type": "number"
+    },
+    "TotalViews": {
+      "type": "number"
+    },
+    "TrailerLink": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
