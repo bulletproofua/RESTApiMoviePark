@@ -1,0 +1,27 @@
+{
+  "name": "Roles",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "RoleId": {
+      "type": "number",
+      "required": true
+    },
+    "MovieId": {
+      "type": "number"
+    },
+    "PersonId": {
+      "type": "number"
+    },
+    "Name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

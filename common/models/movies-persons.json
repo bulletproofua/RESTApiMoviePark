@@ -1,0 +1,30 @@
+{
+  "name": "MoviesPersons",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "MoviePersonId": {
+      "type": "number",
+      "required": true
+    },
+    "MovieId": {
+      "type": "number"
+    },
+    "PersonId": {
+      "type": "number"
+    },
+    "CrewRoleId": {
+      "type": "number"
+    },
+    "Character": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Nominees",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "NomeneeId": {
+      "type": "number",
+      "required": true
+    },
+    "AwardNominationId": {
+      "type": "number"
+    },
+    "MovieId": {
+      "type": "number"
+    },
+    "PersonId": {
+      "type": "number"
+    },
+    "RoleId": {
+      "type": "number"
+    },
+    "IsAwarded": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

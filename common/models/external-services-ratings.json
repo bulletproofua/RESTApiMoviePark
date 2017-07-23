@@ -1,0 +1,27 @@
+{
+  "name": "ExternalServicesRatings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ExternalServiceRatingId": {
+      "type": "number",
+      "required": true
+    },
+    "ExternalServicesId": {
+      "type": "number"
+    },
+    "MovieId": {
+      "type": "number"
+    },
+    "Rating": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

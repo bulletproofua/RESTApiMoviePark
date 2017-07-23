@@ -1,0 +1,27 @@
+{
+  "name": "UsersMovies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "UserMovieId": {
+      "type": "number",
+      "required": true
+    },
+    "UserId": {
+      "type": "number"
+    },
+    "MovieId": {
+      "type": "number"
+    },
+    "Rating": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

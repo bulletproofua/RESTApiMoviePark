@@ -1,0 +1,24 @@
+{
+  "name": "MoviesCountries",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "MovieCountryId": {
+      "type": "number",
+      "required": true
+    },
+    "MovieId": {
+      "type": "number"
+    },
+    "CountryId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

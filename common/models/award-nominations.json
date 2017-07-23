@@ -1,0 +1,24 @@
+{
+  "name": "AwardNominations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "AwardNominationId": {
+      "type": "number",
+      "required": true
+    },
+    "AwardId": {
+      "type": "number"
+    },
+    "NominationTypeId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

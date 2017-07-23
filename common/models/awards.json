@@ -1,0 +1,33 @@
+{
+  "name": "Awards",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "AwardId": {
+      "type": "number",
+      "required": true
+    },
+    "Title": {
+      "type": "string"
+    },
+    "AwardTypeId": {
+      "type": "number"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Site": {
+      "type": "string"
+    },
+    "PhotoId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

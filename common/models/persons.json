@@ -1,0 +1,36 @@
+{
+  "name": "Persons",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "PersonId": {
+      "type": "number",
+      "required": true
+    },
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Birthday": {
+      "type": "date"
+    },
+    "Country": {
+      "type": "number"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "PhotoId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "MoviesGanres",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "MovieGenreId": {
+      "type": "number",
+      "required": true
+    },
+    "MovieId": {
+      "type": "number"
+    },
+    "GenreId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

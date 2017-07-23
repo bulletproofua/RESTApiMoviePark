@@ -1,0 +1,21 @@
+{
+  "name": "CrewRole",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "CrewRoleId": {
+      "type": "number",
+      "required": true
+    },
+    "Name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

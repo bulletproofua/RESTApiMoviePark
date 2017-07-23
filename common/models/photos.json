@@ -1,0 +1,24 @@
+{
+  "name": "Photos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "PhotoId": {
+      "type": "number",
+      "required": true
+    },
+    "Link": {
+      "type": "string"
+    },
+    "PhotoTypeId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

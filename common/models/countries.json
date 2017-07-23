@@ -1,0 +1,21 @@
+{
+  "name": "Countries",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "CountryId": {
+      "type": "number",
+      "required": true
+    },
+    "Name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

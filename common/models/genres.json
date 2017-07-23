@@ -1,0 +1,21 @@
+{
+  "name": "Genres",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "GenreId": {
+      "type": "number",
+      "required": true
+    },
+    "Type": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

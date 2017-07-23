@@ -16,5 +16,81 @@
   "Movies": {
     "dataSource": "memory",
     "public": true
+  },
+  "UsersMovies": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "ExternalServicesRatings": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "ExternalServices": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "MoviesGanres": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Genres": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "MoviesCountries": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "MoviesPersons": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "CrewRole": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Countries": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Persons": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "PersonsPhotos": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Photos": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "PhotosTypes": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "AwardTypes": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Awards": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "AwardNominations": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Roles": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "NominationTypes": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Nominees": {
+    "dataSource": "memory",
+    "public": true
   }
 }

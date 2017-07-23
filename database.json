@@ -1,0 +1,27 @@
+{
+    "dev" : {
+        "host" : "localhost",
+        "password" : {"ENV" : "MP_DEV_DBPASS"},
+        "user" : {"ENV" : "MP_DEV_DBUSER"},
+        "database" : {"ENV" : "MP_DEV_DBNAME"},
+        "driver" : "mysql",
+        "multipleStatements" : true
+    },
+    "test" : {
+        "host" : "localhost",
+        "password" : {"ENV" : "MP_TEST_DBPASS"},
+        "user" : {"ENV" : "MP_TEST_DBUSER"},
+        "database" : {"ENV" : "MP_TEST_DBNAME"},
+        "driver" : "mysql",
+        "multipleStatements" : true
+    },
+    "prod" : {
+        "host" : "localhost",
+        "password" : {"ENV" : "MP_PROD_DBPASS"},
+        "user" : {"ENV" : "MP_PROD_DBUSER"},
+        "database" : {"ENV" : "MP_PROD_DBNAME"},
+        "driver" : "mysql",
+        "multipleStatements" : true
+    },
+    "sql-file" : true
+}
