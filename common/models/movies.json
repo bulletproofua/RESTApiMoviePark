@@ -37,7 +37,8 @@
       "required": true
     },
     "TotalViews": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "TrailerLink": {
       "type": "string"

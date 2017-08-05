@@ -10,7 +10,7 @@
       "type": "number",
       "required": true
     },
-    "Type": {
+    "GenreType": {
       "type": "string",
       "required": true
     }

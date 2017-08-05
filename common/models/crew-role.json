@@ -10,7 +10,7 @@
       "type": "number",
       "required": true
     },
-    "Name": {
+    "CrewRoleName": {
       "type": "string",
       "required": true
     }

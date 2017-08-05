@@ -10,7 +10,7 @@
       "type": "number",
       "required": true
     },
-    "Type": {
+    "AwardType": {
       "type": "number",
       "required": true
     }

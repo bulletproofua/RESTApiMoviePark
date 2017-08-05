@@ -10,7 +10,7 @@
       "type": "number",
       "required": true
     },
-    "Name": {
+    "CountryName": {
       "type": "string",
       "required": true
     }

@@ -10,7 +10,7 @@
       "type": "number",
       "required": true
     },
-    "Type": {
+    "NominationType": {
       "type": "string",
       "required": true
     }

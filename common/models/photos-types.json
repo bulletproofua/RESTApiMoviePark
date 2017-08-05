@@ -10,7 +10,7 @@
       "type": "number",
       "required": true
     },
-    "Type": {
+    "PhotoType": {
       "type": "string",
       "required": true
     }

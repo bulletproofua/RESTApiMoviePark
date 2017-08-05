@@ -10,7 +10,7 @@
       "type": "number",
       "required": true
     },
-    "Name": {
+    "ServiceName": {
       "type": "string",
       "required": true
     },

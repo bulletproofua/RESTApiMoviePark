@@ -19,7 +19,8 @@
       "required": true
     },
     "Rating": {
-      "type": "number"
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

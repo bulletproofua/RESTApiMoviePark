@@ -21,7 +21,7 @@
     "CrewRoleId": {
       "type": "number"
     },
-    "Character": {
+    "MoviePersonCharacter": {
       "type": "string"
     }
   },
