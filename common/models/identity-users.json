@@ -1,0 +1,33 @@
+{
+  "name": "IdentityUsers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "UserId": {
+      "type": "number",
+      "required": true
+    },
+    "Email": {
+      "type": "string",
+      "required": true
+    },
+    "UserName": {
+      "type": "string",
+      "required": true
+    },
+    "UserPassword": {
+      "type": "string",
+      "required": true
+    },
+    "UserPhoneNumber": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

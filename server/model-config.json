@@ -92,5 +92,17 @@
   "Nominees": {
     "dataSource": "memory",
     "public": true
+  },
+  "IdentityUsers": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Users": {
+    "dataSource": "memory",
+    "public": true
+  },
+  "Staff": {
+    "dataSource": "memory",
+    "public": true
   }
 }

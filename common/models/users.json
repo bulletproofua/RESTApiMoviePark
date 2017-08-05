@@ -1,0 +1,31 @@
+{
+  "name": "Users",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "UserId": {
+      "type": "number",
+      "required": true
+    },
+    "Age": {
+      "type": "number"
+    },
+    "Sex": {
+      "type": "string"
+    },
+    "PhotoId": {
+      "type": "string"
+    },
+    "StaffId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
