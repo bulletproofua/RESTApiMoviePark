@@ -11,13 +11,16 @@
       "required": true
     },
     "ExternalServicesId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "MovieId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "Rating": {
-      "type": "number"
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

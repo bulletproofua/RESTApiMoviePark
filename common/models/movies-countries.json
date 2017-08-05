@@ -11,10 +11,12 @@
       "required": true
     },
     "MovieId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "CountryId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

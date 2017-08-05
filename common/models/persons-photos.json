@@ -11,10 +11,12 @@
       "required": true
     },
     "PersonId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "PhotoId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

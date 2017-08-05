@@ -11,10 +11,12 @@
       "required": true
     },
     "UserId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "MovieId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "Rating": {
       "type": "number"

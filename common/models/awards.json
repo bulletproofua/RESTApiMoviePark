@@ -11,13 +11,16 @@
       "required": true
     },
     "Title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "AwardTypeId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "Date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "Site": {
       "type": "string"

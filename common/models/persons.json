@@ -11,10 +11,12 @@
       "required": true
     },
     "FirstName": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "LastName": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Birthday": {
       "type": "date"

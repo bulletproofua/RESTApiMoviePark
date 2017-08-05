@@ -11,10 +11,12 @@
       "required": true
     },
     "AwardId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "NominationTypeId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

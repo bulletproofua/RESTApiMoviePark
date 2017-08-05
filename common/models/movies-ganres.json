@@ -11,10 +11,12 @@
       "required": true
     },
     "MovieId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "GenreId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

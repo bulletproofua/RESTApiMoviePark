@@ -11,10 +11,12 @@
       "required": true
     },
     "AwardNominationId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "MovieId": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "PersonId": {
       "type": "number"
@@ -23,7 +25,8 @@
       "type": "number"
     },
     "IsAwarded": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     }
   },
   "validations": [],
