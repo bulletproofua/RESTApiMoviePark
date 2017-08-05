@@ -18,7 +18,7 @@
       "type": "number",
       "required": true
     },
-    "Name": {
+    "RoleName": {
       "type": "string",
       "required": true
     }
