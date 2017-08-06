@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "photos": {
+      "type": "belongsTo",
+      "model": "Photos",
+      "foreignKey": "PhotoTypeId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

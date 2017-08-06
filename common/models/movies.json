@@ -45,7 +45,48 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "identityUsers": {
+      "type": "hasMany",
+      "model": "IdentityUsers",
+      "foreignKey": "MovieId",
+      "through": "UsersMovies"
+    },
+    "externalServices": {
+      "type": "hasMany",
+      "model": "ExternalServices",
+      "foreignKey": "MovieId",
+      "through": "ExternalServicesRatings"
+    },
+    "genres": {
+      "type": "hasMany",
+      "model": "Genres",
+      "foreignKey": "MovieId",
+      "through": "MoviesGenres"
+    },
+    "countries": {
+      "type": "hasMany",
+      "model": "Countries",
+      "foreignKey": "MovieId",
+      "through": "MoviesCountries"
+    },
+    "persons": {
+      "type": "hasMany",
+      "model": "Persons",
+      "foreignKey": "MovieId",
+      "through": "MoviesPersons"
+    },
+    "roles": {
+      "type": "hasMany",
+      "model": "Roles",
+      "foreignKey": "MovieId"
+    },
+    "nominees": {
+      "type": "hasMany",
+      "model": "Nominees",
+      "foreignKey": "MovieId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

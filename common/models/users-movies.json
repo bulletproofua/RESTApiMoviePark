@@ -24,7 +24,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "identityUsers": {
+      "type": "belongsTo",
+      "model": "IdentityUsers",
+      "foreignKey": "UserId"
+    },
+    "movies": {
+      "type": "belongsTo",
+      "model": "Movies",
+      "foreignKey": "MovieId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

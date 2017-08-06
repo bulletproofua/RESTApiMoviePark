@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "persons": {
+      "type": "belongsTo",
+      "model": "Persons",
+      "foreignKey": "PersonId"
+    },
+    "photos": {
+      "type": "belongsTo",
+      "model": "Photos",
+      "foreignKey": "PhotoId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

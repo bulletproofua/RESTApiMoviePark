@@ -29,7 +29,7 @@
     "dataSource": "memory",
     "public": true
   },
-  "MoviesGanres": {
+  "MoviesGenres": {
     "dataSource": "memory",
     "public": true
   },

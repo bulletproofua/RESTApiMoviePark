@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "moviesPersons": {
+      "type": "belongsTo",
+      "model": "MoviesPersons",
+      "foreignKey": "CrewRoleName"
+    }
+  },
   "acls": [],
   "methods": {}
 }

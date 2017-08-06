@@ -6,7 +6,7 @@
     "validateUpsert": true
   },
   "properties": {
-    "ExternalServicesId": {
+    "ExternalServiceId": {
       "type": "number",
       "required": true
     },
@@ -23,7 +23,19 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movies": {
+      "type": "hasMany",
+      "model": "Movies",
+      "foreignKey": "ExternalServiceId",
+      "through": "ExternalServicesRatings"
+    },
+    "photos": {
+      "type": "hasOne",
+      "model": "Photos",
+      "foreignKey": "PhotoId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

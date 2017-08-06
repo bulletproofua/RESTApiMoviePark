@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movies": {
+      "type": "belongsTo",
+      "model": "Movies",
+      "foreignKey": "MovieId"
+    },
+    "countries": {
+      "type": "belongsTo",
+      "model": "Countries",
+      "foreignKey": "CountryId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

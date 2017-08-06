@@ -30,7 +30,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "persons": {
+      "type": "belongsTo",
+      "model": "Persons",
+      "foreignKey": "PersonId"
+    },
+    "movies": {
+      "type": "belongsTo",
+      "model": "Movies",
+      "foreignKey": "MovieId"
+    },
+    "roles": {
+      "type": "hasOne",
+      "model": "Roles",
+      "foreignKey": "RoleId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

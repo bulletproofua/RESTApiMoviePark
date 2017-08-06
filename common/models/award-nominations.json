@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "awards": {
+      "type": "belongsTo",
+      "model": "Awards",
+      "foreignKey": "AwardId"
+    },
+    "nominationTypes": {
+      "type": "belongsTo",
+      "model": "NominationTypes",
+      "foreignKey": "NominationTypeId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

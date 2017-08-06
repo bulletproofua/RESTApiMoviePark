@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "awards": {
+      "type": "belongsTo",
+      "model": "Awards",
+      "foreignKey": "AwardId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

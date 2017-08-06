@@ -30,7 +30,19 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "nominationTypes": {
+      "type": "hasMany",
+      "model": "NominationTypes",
+      "foreignKey": "AwardId",
+      "through": "AwardNominations"
+    },
+    "awardTypes": {
+      "type": "hasOne",
+      "model": "AwardTypes",
+      "foreignKey": "AwardTypeId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

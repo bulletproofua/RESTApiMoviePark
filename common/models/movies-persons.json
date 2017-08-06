@@ -26,7 +26,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movies": {
+      "type": "belongsTo",
+      "model": "Movies",
+      "foreignKey": "MoviesId"
+    },
+    "persons": {
+      "type": "belongsTo",
+      "model": "Persons",
+      "foreignKey": "PersonId"
+    },
+    "crewRoles": {
+      "type": "hasOne",
+      "model": "CrewRole",
+      "foreignKey": "CrewRoleId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

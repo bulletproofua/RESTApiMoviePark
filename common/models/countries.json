@@ -16,7 +16,19 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movies": {
+      "type": "hasMany",
+      "model": "Movies",
+      "foreignKey": "CountryId",
+      "through": "MoviesCountries"
+    },
+    "persons": {
+      "type": "belongsTo",
+      "model": "Persons",
+      "foreignKey": "CountryId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

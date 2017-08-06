@@ -21,7 +21,7 @@
     "Birthday": {
       "type": "date"
     },
-    "Country": {
+    "CountryId": {
       "type": "number"
     },
     "Description": {
@@ -32,7 +32,35 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movies": {
+      "type": "hasMany",
+      "model": "Movies",
+      "foreignKey": "PersonId",
+      "through": "MoviesPersons"
+    },
+    "photos": {
+      "type": "hasMany",
+      "model": "Photos",
+      "foreignKey": "PersonId",
+      "through": "PersonsPhotos"
+    },
+    "countries": {
+      "type": "hasOne",
+      "model": "Countries",
+      "foreignKey": "CountryId"
+    },
+    "roles": {
+      "type": "hasMany",
+      "model": "Roles",
+      "foreignKey": "PersonId"
+    },
+    "nominees": {
+      "type": "hasMany",
+      "model": "Nominees",
+      "foreignKey": "PersonId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -27,7 +27,19 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "users": {
+      "type": "hasOne",
+      "model": "Users",
+      "foreignKey": "UserId"
+    },
+    "movies": {
+      "type": "hasMany",
+      "model": "Movies",
+      "foreignKey": "UserId",
+      "through": "UsersMovies"
+    }
+  },
   "acls": [],
   "methods": {}
 }

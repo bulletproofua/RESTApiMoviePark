@@ -25,7 +25,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "identityUsers": {
+      "type": "hasOne",
+      "model": "IdentityUsers",
+      "foreignKey": "UserId"
+    },
+    "staffs": {
+      "type": "hasOne",
+      "model": "Staff",
+      "foreignKey": "StaffId"
+    },
+    "photos": {
+      "type": "hasOne",
+      "model": "Photos",
+      "foreignKey": "PhotoId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

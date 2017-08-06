@@ -10,7 +10,7 @@
       "type": "number",
       "required": true
     },
-    "ExternalServicesId": {
+    "ExternalServiceId": {
       "type": "number",
       "required": true
     },
@@ -24,7 +24,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movies": {
+      "type": "belongsTo",
+      "model": "Movies",
+      "foreignKey": "MovieId"
+    },
+    "externalServices": {
+      "type": "belongsTo",
+      "model": "ExternalServices",
+      "foreignKey": "ExternalServiceId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -1,5 +1,5 @@
 {
-  "name": "MoviesGanres",
+  "name": "MoviesGenres",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "movies": {
+      "type": "belongsTo",
+      "model": "Movies",
+      "foreignKey": "MovieId"
+    },
+    "genres": {
+      "type": "belongsTo",
+      "model": "Genres",
+      "foreignKey": "GenreId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
