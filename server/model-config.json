@@ -104,5 +104,9 @@
   "Staff": {
     "dataSource": "memory",
     "public": true
+  },
+  "MoviesPhotos": {
+    "dataSource": "memory",
+    "public": true
   }
 }

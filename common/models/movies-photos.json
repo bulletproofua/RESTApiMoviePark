@@ -1,0 +1,37 @@
+{
+  "name": "MoviesPhotos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "MoviePhotoId": {
+      "type": "number",
+      "required": true
+    },
+    "MovieId": {
+      "type": "number",
+      "required": true
+    },
+    "PhotoId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "movies": {
+      "type": "belongsTo",
+      "model": "Movies",
+      "foreignKey": "MovieId"
+    },
+    "photos": {
+      "type": "belongsTo",
+      "model": "Photos",
+      "foreignKey": "PhotoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

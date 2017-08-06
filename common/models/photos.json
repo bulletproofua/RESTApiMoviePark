@@ -31,6 +31,12 @@
       "type": "hasOne",
       "model": "PhotosTypes",
       "foreignKey": "PhotoTypeId"
+    },
+    "photos": {
+      "type": "hasMany",
+      "model": "Photos",
+      "foreignKey": "PhotoId",
+      "through": "MoviesPhotos"
     }
   },
   "acls": [],

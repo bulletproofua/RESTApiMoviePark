@@ -85,6 +85,12 @@
       "type": "hasMany",
       "model": "Nominees",
       "foreignKey": "MovieId"
+    },
+    "photos": {
+      "type": "hasMany",
+      "model": "Photos",
+      "foreignKey": "MovieId",
+      "through": "MoviesPhotos"
     }
   },
   "acls": [],
