@@ -7,6 +7,7 @@
   },
   "properties": {
     "GenreId": {
+      "id":1,
       "type": "number",
       "required": true
     },

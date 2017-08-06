@@ -14,99 +14,99 @@
     ]
   },
   "Movies": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "UsersMovies": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "ExternalServicesRatings": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "ExternalServices": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "MoviesGenres": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Genres": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "MoviesCountries": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "MoviesPersons": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "CrewRole": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Countries": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Persons": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "PersonsPhotos": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Photos": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "PhotosTypes": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "AwardTypes": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Awards": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "AwardNominations": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Roles": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "NominationTypes": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Nominees": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "IdentityUsers": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Users": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "Staff": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   },
   "MoviesPhotos": {
-    "dataSource": "memory",
+    "dataSource": "mysql",
     "public": true
   }
 }

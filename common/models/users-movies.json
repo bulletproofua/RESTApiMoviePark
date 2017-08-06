@@ -7,6 +7,7 @@
   },
   "properties": {
     "UserMovieId": {
+      "id":1,
       "type": "number",
       "required": true
     },

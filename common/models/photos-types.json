@@ -7,6 +7,7 @@
   },
   "properties": {
     "PhotoTypeId": {
+      "id":1,
       "type": "number",
       "required": true
     },
