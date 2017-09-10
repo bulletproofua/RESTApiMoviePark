@@ -108,5 +108,9 @@
   "MoviesPhotos": {
     "dataSource": "mysql",
     "public": true
+  },
+  "aprioriAlgorithm": {
+    "dataSource": "memory",
+    "public": true
   }
 }

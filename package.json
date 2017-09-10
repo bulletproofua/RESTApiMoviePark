@@ -22,9 +22,11 @@
     "strong-error-handler": "^2.0.0"
   },
   "devDependencies": {
+    "backbone": "^1.3.3",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
     "loopback-connector-mysql": "^4.2.0",
+    "mingo": "^2.0.0",
     "nsp": "^2.1.0"
   },
   "repository": {
