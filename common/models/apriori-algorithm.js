@@ -11,30 +11,25 @@ function getOnlyIds(data){
 
     for(var user in data){
         var arr = [];
-
         data[user].forEach(function(movie) {
             arr.push(Number(movie['id']));
         });
-
         result.push(arr);
     }
     return result;
 };
 
-// var filmId = [146, 149, 151, 163, 164, 168, 146, 164,999];  // movies of all users
-//
-// var itemSet =  [146, 149, 151, 163, 164, 151];
 function includes(itemsOfUser, itemSet) {
 
     for(var i = 0; i < itemSet.length; i++){
         if (itemsOfUser.indexOf(itemSet[i]) == -1) return false;
     };
-
     return true;
 }
 
 function countSupport(data, itemSets){
     var itemSetsLocal = [];
+
     for (var j = 0; j < itemSets.length; j++) {
         itemSetsLocal.push( { id: itemSets[j] , support: 0});
         for (var i = 0; i < data.length; i++) {
@@ -43,12 +38,12 @@ function countSupport(data, itemSets){
             }
         }
     }
-
     return itemSetsLocal;
 }
 
 function check(arr){
   var res = false
+
   for (var i = 0; i < arr.length; i++) {
     for (var j=i+1 ; j < arr.length; j++) {
         if(arr[i].id == arr[j].id){
@@ -60,6 +55,7 @@ function check(arr){
 }
 
 function contains(array, element){
+
   for (var i = 0; i < array.length; i++) {
        if( _.isEqual(array[i], element)) return true;
   }
@@ -72,9 +68,8 @@ function createPairs(itemSets){
   for (var i = 0; i < itemSets.length; i++) {
     for (var j = i+1; j < itemSets.length; j++) {
       var itemElement = createItemSet(itemSets[i].id, itemSets[j].id);
-      // console.log('ITEMELEMENT', itemElement)
       if( itemElement != null){
-        if( !contains(arrOfCouple, itemElement)){ // перевірити
+        if( !contains(arrOfCouple, itemElement)){
           arrOfCouple.push( itemElement );
         }
       }
@@ -85,7 +80,6 @@ function createPairs(itemSets){
 
 function createItemSet(itemSet1, itemSet2){
   var uniqueElements = [];
-  // console.log("============== \n")
   if(itemSet1.length != itemSet2.length ) return null;
 
     itemSet1.forEach(function(item){
@@ -93,7 +87,6 @@ function createItemSet(itemSet1, itemSet2){
         uniqueElements.push(item);
       }
     })
-
     itemSet2.forEach(function(item){
       if(uniqueElements.indexOf(item) == -1){
         uniqueElements.push(item);
@@ -101,8 +94,6 @@ function createItemSet(itemSet1, itemSet2){
     })
 
     if( uniqueElements.length == itemSet1.length+1){
-
-
       return uniqueElements.sort(
             //   function(a, b) {
             //   return a - b;
@@ -137,6 +128,7 @@ function minSupportArr (arr, minCount){
 
 function deleteMinSupElements (arrWithPairs, arrWithMinSup) {
     var itemSet = [];
+
     for (var i = 0; i < arrWithPairs.length; i++) {
       var minScore = 9999999;
       arrWithPairs[i].length
@@ -148,6 +140,7 @@ function deleteMinSupElements (arrWithPairs, arrWithMinSup) {
         }
       }
     }
+
     return itemSet;
 };
 
@@ -198,17 +191,14 @@ function Apriori(dataBaseTDB, support){
 
     itemSet = deleteMinSupElements(dataWhithPairs , minSupArr);
     if(itemSet.length == 0){
-      console.log("-----------------------")
-      console.log(_.union(_.flatten(lastResult)));
       return _.union(_.flatten(lastResult));
-      break;
     }
   }
-  console.log('LASTRESULT', _.union(_.flatten(lastResult)))
   return _.union(_.flatten(lastResult));
 }
 
-var aprioriResult = Apriori(myData, 4);
+var aprioriResult = Apriori(myData, 3);
+console.log('APRIORIRESULT', aprioriResult)
 
   Apriorialgorithm.remoteMethod( 'Apriorialgorithm', {
     description: "Return data",
