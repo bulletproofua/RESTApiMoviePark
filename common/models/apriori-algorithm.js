@@ -93,29 +93,21 @@ function createItemSet(itemSet1, itemSet2){
         uniqueElements.push(item);
       }
     })
-    // console.log("1 ", itemSet1);
-
 
     itemSet2.forEach(function(item){
       if(uniqueElements.indexOf(item) == -1){
         uniqueElements.push(item);
       }
     })
-    // console.log("2 ", itemSet2);
 
-    // console.log('UNIQUEELEMENTS', uniqueElements)
     if( uniqueElements.length == itemSet1.length+1){
-      // console.log('CONDITION PASSED ======>')
-      uniqueElements.sort(
-      //   function(a, b) {
-      //   return a - b;
-      // }
-    );
 
-      return uniqueElements
-      // .sort(function(a, b) {
-      //   return a - b;
-      // });
+
+      return uniqueElements.sort(
+            //   function(a, b) {
+            //   return a - b;
+            // }
+          );
     } else {
       return null;
     }
@@ -162,37 +154,8 @@ function deleteMinSupElements (arrWithPairs, arrWithMinSup) {
 function min(a, b) {
   return a < b ? a : b;
 }
+
 //===================================================================================
-  // початковий набір даних ( з бд )
-  var myData = data;
-  // console.log('MYDATA', myData)
-  var users = _.keys(myData);
-
-
-// набір усі ід фільмів найбільш схожих користувачів
-
-  var itemSet =[];
-  for(var key in myData){
-      for (var i = 0 ; i < myData[key].length; i++) {
-        var elementOfMyData = [ Number(myData[key][i].id )];
-        if(!contains(itemSet , elementOfMyData )){
-          itemSet.push( elementOfMyData );
-        }
-      }
-  }
-
-  itemSet.sort(function(a,b){
-    return a - b ;
-  });
-
-// console.log('ITEMSET', itemSet)
-
-
-
-// ід фільмів по клжному з користувачів [[],[],[],[],[]]
-var finalData = getOnlyIds(myData);
-// console.log('FINALDATA', finalData)
-
 // var itemSet = [ ['A'], ['B'], ['C'], ['D'], ['E'] ];
 // var finalData = [
 //   ['A','C','D'],
@@ -201,35 +164,51 @@ var finalData = getOnlyIds(myData);
 //   ['B', 'E']
 // ];
 
-var supData, filteredData, minSupArr, dataWhithPairs;
-// function Apriori(dataBaseTDB, itemSet){
-var lastResult = [];
-var support = 3;
+  // початковий набір даних ( з бд )
+  var myData = data;
+
+function Apriori(dataBaseTDB, support){
+    var supData, filteredData, minSupArr, dataWhithPairs;
+    var finalData;
+    var itemSet =[];
+    var lastResult = [];
+
+
+    for(var key in myData){
+        for (var i = 0 ; i < myData[key].length; i++) {
+          var elementOfMyData = [ Number(myData[key][i].id )];
+          if(!contains(itemSet , elementOfMyData )){
+            itemSet.push( elementOfMyData );
+          }
+        }
+    }
+
+    itemSet.sort(function(a,b){
+      return a - b ;
+    });
+
+  finalData = getOnlyIds(myData);
+
   while (itemSet.length != 1) {
     supData = countSupport(finalData, itemSet)
-    // console.log('SUPDATA2 \n', supData)
-    // console.log('\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> \n')
     filteredData = supCountFilter(supData, support)
-    // console.log('FILTEREDDATA \n', filteredData2)
     minSupArr = minSupportArr(supData, support)
-    // console.log('MINSUPARR', minSupArr)
-     dataWhithPairs = createPairs(filteredData);
-    // console.log('DATAWHITHPAIRS \n', dataWhithPairs2)
+    dataWhithPairs = createPairs(filteredData);
     lastResult = itemSet;
 
     itemSet = deleteMinSupElements(dataWhithPairs , minSupArr);
-
-    console.log('itemSet', itemSet)
-    console.log('\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> \n')
     if(itemSet.length == 0){
+      console.log("-----------------------")
       console.log(_.union(_.flatten(lastResult)));
+      return _.union(_.flatten(lastResult));
       break;
     }
   }
-    // console.log('LASTRESULT', lastResult)
+  console.log('LASTRESULT', _.union(_.flatten(lastResult)))
+  return _.union(_.flatten(lastResult));
+}
 
-// }
-
+var aprioriResult = Apriori(myData, 4);
 
   Apriorialgorithm.remoteMethod( 'Apriorialgorithm', {
     description: "Return data",
@@ -244,7 +223,7 @@ var support = 3;
       verb: 'get'
     },
     returns: {
-      arg: 'myData',
+      arg: 'aprioriResult',
       type: 'array'
     }
   } );
